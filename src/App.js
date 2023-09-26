@@ -1,20 +1,26 @@
-import HelloWord from './components/HelloWord';
+
 import './App.css';
+import HelloWord from './components/HelloWord';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
+import Frase from './components/Frases';
 
 function App() {
-  const name = "Mel"
- 
-  const newName = name.toUpperCase( )
-
-  const url = 'https://via.placeholder.com/150'
+  const name = 'Maria'
 
   return (
     <div className= "app">
-      <h2>ALTERANDO O JSX</h2>
-      <p>Olá, {newName}</p>
-      <p>Soma: {5 + 5}</p>
-      <img src = {url} alt= "Minha imagem"></img>
-      <HelloWord/>
+      <h1>Testando CSS</h1>
+      <Frase/>
+      <SayMyName nome = "Matheus" />
+      <SayMyName nome = {name} />
+      <Pessoa
+        nome="Melqui"
+        idade="17"
+        profissao="Programador"
+        foto="https://via.placeholder.com/150"
+      />
+
     </div>
    
     )
