@@ -1,6 +1,7 @@
 body {
   padding: 50px;
-  background-color: black;
+  padding-bottom: 500px;
+  
 }
 
 h1 {
@@ -10,4 +11,12 @@ h1 {
 p {
   background-color: #5746f5;
   padding: 10px;
+}
+
+ul {
+  background-color: #5746f5;
+}
+
+li {
+  color: black;
 }
